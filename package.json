@@ -1,6 +1,6 @@
 {
   "name": "three-path-geometry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "thick 2D lines for ThreeJS",
   "main": "./dist/PathGeometry.js",
   "jsnext:main": "./PathGeometry.js",
