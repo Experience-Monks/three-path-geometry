@@ -1,0 +1,58 @@
+{
+  "name": "three-path-geometry",
+  "version": "1.0.0",
+  "description": "thick 2D lines for ThreeJS",
+  "main": "./dist/PathGeometry.js",
+  "jsnext:main": "./PathGeometry.js",
+  "license": "MIT",
+  "semistandard": {
+    "globals": [
+      "THREE"
+    ]
+  },
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "array-equal": "^1.0.0",
+    "defined": "^1.0.0",
+    "gl-vec2": "^1.0.0",
+    "three-buffer-vertex-data": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "bound-points": "^1.0.0",
+    "budo": "^9.2.0",
+    "extract-svg-path": "^2.1.0",
+    "normalize-path-scale": "^2.0.0",
+    "parse-svg-path": "^0.1.2",
+    "simplify-path": "^1.1.0",
+    "svg-path-contours": "^2.0.0",
+    "three": "^0.81.2"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "compile": "babel -d dist/ PathGeometry.js",
+    "prepublish": "npm run compile",
+    "start": "budo demo/index.js:bundle.js --live -- -t babelify -t extract-svg-path/transform"
+  },
+  "keywords": [
+    "line",
+    "2d",
+    "join",
+    "path",
+    "geometry"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/three-path-geometry.git"
+  },
+  "homepage": "https://github.com/Jam3/three-path-geometry",
+  "bugs": {
+    "url": "https://github.com/Jam3/three-path-geometry/issues"
+  }
+}
