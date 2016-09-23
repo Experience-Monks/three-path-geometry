@@ -38,7 +38,8 @@
     "test": "node test.js",
     "compile": "babel -d dist/ PathGeometry.js",
     "prepublish": "npm run compile",
-    "start": "budo demo/index.js:bundle.js --live -- -t babelify -t extract-svg-path/transform"
+    "dev": "budo demo/index.js:bundle.js --live -- -t babelify -t extract-svg-path/transform",
+    "start": "npm run compile && npm run dev"
   },
   "keywords": [
     "line",
