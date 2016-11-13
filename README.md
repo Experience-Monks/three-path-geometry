@@ -16,7 +16,7 @@ Thick 2D line geometry for ThreeJS, converting a polyline into triangles. This h
 
 This is best suited for a drawing app that needs to render *thousands* of commands, i.e. using a static geometry.
 
-> :bulb: Until [this patch](https://github.com/mrdoob/three.js/pull/9631) lands, dynamic growing/shrinking of buffers is not supported by ThreeJS.
+> :bulb: Dynamic growing/shrinking of buffers is only supported in ThreeJS r82 and higher.
 
 ## Install
 
